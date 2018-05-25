@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef Abstract="True" Name="WookieeFactionBase">
+    <colorSpectrum>
+      <li>(0, 0.737, 0.847)</li>
+    </colorSpectrum>
+  </FactionDef>
+  
+  <FactionDef Parent="WookieeFactionBase">
+    <defName>WookieePlayerColony</defName>
+    <label>Wookiee Colony</label>
+    <description>Your own community.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Wookiee</basicMemberKind>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Ultra</techLevel>
+    <backstoryCategory>Civil</backstoryCategory>
+    <expandingIconTexture>World/WookieeBaseIcon</expandingIconTexture>
+    <baseNameMaker>NamerFactionBasePlayerColony</baseNameMaker>
+	<baseNameMakerPlayer>NamerFactionPlayerColonyRandomized</baseNameMakerPlayer>
+	<factionNameMakerPlayer>NamerFactionBasePlayerColonyRandomized</factionNameMakerPlayer>
+	<geneticVariance>1</geneticVariance>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>WookieeHair</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+  <FactionDef ParentName="WookieeFactionBase">
+    <defName>WookieePlayerColonyTribe</defName>
+    <label>Wookiee Tribe</label>
+    <description>Wookiee Tribal Start.</description>
+    <isPlayer>true</isPlayer>
+    <pawnsPlural>tribespeople</pawnsPlural>
+    <basicMemberKind>Wookiee</basicMemberKind>
+	<techLevel>Ultra</techLevel>
+	<backstoryCategory>Civil</backstoryCategory>
+	<expandingIconTexture>World/WorldObjects/Expanding/Village</expandingIconTexture>
+	<homeIconPath>World/WookieeBaseIcon</homeIconPath>
+	<pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+	<baseNameMaker>NamerFactionBasePlayerTribe</baseNameMaker>
+	<baseNameMakerPlayer>NamerFactionTribal</baseNameMakerPlayer>
+	<factionNameMakerPlayer>NamerFactionBaseTribal</factionNameMakerPlayer>
+	<geneticVariance>1</geneticVariance>
+	<startingResearchTags>
+      <li>TribalStart</li>
+    </startingResearchTags>
+    <hairTags>
+      <li>Tribal</li>
+    </hairTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Cloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <recipePrerequisiteTags>
+      <li>Tribal</li>
+    </recipePrerequisiteTags>
+    </FactionDef>
+
+</Defs>
