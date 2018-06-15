@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <!-- ============================ Wookiee Base ========================== -->
+
+  <PawnKindDef Name="WookieeTribalBase" Abstract="True">
+    <defName>WookieeTribalBase</defName>
+    <race>Alien_Wookiee</race>
+    <defaultFactionType>Wookiee</defaultFactionType>
+	  <backstoryCategory>Wookiee</backstoryCategory>
+    <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
+    <apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <invFoodDef>Pemmican</invFoodDef>
+  </PawnKindDef>
+
+  <!-- ============================ Wookiee Civilians ========================== -->
+  
+
+  <PawnKindDef ParentName="WookieeTribalBase" Name="WookieeWarrior">
+    <defName>WookieeWarrior</defName>
+    <label>Warrior</label>
+  	<minGenerationAge>0</minGenerationAge>
+	  <maxGenerationAge>600</maxGenerationAge>
+    <combatPower>40</combatPower>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>180</min>
+      <max>350</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+		<weaponMoney>
+			<min>60</min>
+			<max>400</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+		</weaponTags>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="WookieeWarrior">
+    <defName>WookieeSlave</defName>
+    <label>Slave</label>
+    <combatPower>30</combatPower>
+    <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
+    <itemQuality>Shoddy</itemQuality>
+    <isFighter>false</isFighter>
+  	<minGenerationAge>0</minGenerationAge>
+	  <maxGenerationAge>600</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.2</min>
+      <max>0.8</max>
+    </gearHealthRange>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>150</min>
+      <max>300</max>
+    </apparelMoney> <techHediffsMoney>
+      <min>0</min>
+      <max>35</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.01</techHediffsChance>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <invNutrition>1</invNutrition>
+    <invFoodDef>Pemmican</invFoodDef>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="WookieeWarrior">
+    <defName>WookieeTrader</defName>
+    <label>Trader</label>
+    <trader>true</trader>
+  	<minGenerationAge>12</minGenerationAge>
+	  <maxGenerationAge>350</maxGenerationAge>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_TribalHeaddress</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WookieeTribalBase">
+    <defName>WookieeArcher</defName>
+    <label>Archer</label>
+    <combatPower>48</combatPower>
+	  <minGenerationAge>0</minGenerationAge>
+    <maxGenerationAge>600</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>180</min>
+      <max>350</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <weaponMoney>
+			<min>400</min>
+			<max>400</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+		</weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WookieeTribalBase">
+    <defName>WookieeHunter</defName>
+    <label>Hunter</label>
+    <combatPower>65</combatPower>
+    <minGenerationAge>12</minGenerationAge>
+    <maxGenerationAge>350</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>1.8</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>180</min>
+      <max>450</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <weaponMoney>
+      <min>400</min>
+      <max>700</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedHunter</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="WookieeTribalBase">
+    <defName>WookieeHeavyArcher</defName>
+    <label>Heavy Archer</label>
+    <combatPower>90</combatPower>
+    <minGenerationAge>12</minGenerationAge>
+    <maxGenerationAge>350</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.2</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>200</min>
+      <max>550</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>600</min>
+      <max>750</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicRangedHeavy</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WookieeTribalBase">
+    <defName>WookieeBerserker</defName>
+    <label>Berserker</label>
+    <combatPower>90</combatPower>
+    <minGenerationAge>200</minGenerationAge>
+    <maxGenerationAge>350</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.5</min>
+      <max>2.2</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>200</min>
+      <max>550</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_WarMask</li>
+    </apparelRequired>
+    <weaponMoney>
+      <min>600</min>
+      <max>750</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WookieeTribalBase">
+    <defName>WookieeChief</defName>
+    <label>Chief</label>
+    <labelPlural>chief</labelPlural>
+    <factionLeader>true</factionLeader>
+    <combatPower>90</combatPower>
+		<baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    <itemQuality>Superior</itemQuality>
+  	<minGenerationAge>351</minGenerationAge>
+	  <maxGenerationAge>600</maxGenerationAge>
+    <gearHealthRange>
+      <min>0.7</min>
+      <max>3.0</max>
+    </gearHealthRange>
+    <apparelMoney>
+      <min>600</min>
+      <max>1600</max>
+    </apparelMoney>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_TribalHeaddress</li>
+    </apparelRequired>
+    <weaponMoney>
+			<min>800</min>
+			<max>1000</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>NeolithicRangedChief</li>
+		</weaponTags>
+  </PawnKindDef>
+
+
+</Defs>

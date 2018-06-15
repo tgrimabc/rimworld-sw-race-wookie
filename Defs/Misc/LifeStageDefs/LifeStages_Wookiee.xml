@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <LifeStageDef>
+        <defName>WookieeBaby</defName>
+        <label>baby</label>
+        <bodySizeFactor>0.2</bodySizeFactor>
+        <foodMaxFactor>1.5</foodMaxFactor>
+        <healthScaleFactor>0.2</healthScaleFactor>
+        <hungerRateFactor>0.2</hungerRateFactor>
+        <marketValueFactor>0.5</marketValueFactor>
+        <statFactors>
+            <MoveSpeed>0.3</MoveSpeed>
+        </statFactors>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>WookieekYoungAdult</defName>
+        <label>youngadult</label>
+        <reproductive>true</reproductive>
+        <bodySizeFactor>0.5</bodySizeFactor>
+        <healthScaleFactor>0.5</healthScaleFactor>
+        <hungerRateFactor>0.6</hungerRateFactor>
+        <marketValueFactor>0.9</marketValueFactor>
+        <statFactors>
+            <MoveSpeed>0.7</MoveSpeed>
+        </statFactors>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>WookieeAdult</defName>
+        <label>adult</label>
+        <reproductive>true</reproductive>
+        <bodySizeFactor>0.85</bodySizeFactor>
+        <healthScaleFactor>0.90</healthScaleFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>WookieePrimeAdult</defName>
+        <label>primeadult</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>WookieeMiddleAge</defName>
+        <label>middleage</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>WookieeOldAge</defName>
+        <label>oldage</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <healthScaleFactor>0.90</healthScaleFactor>
+        <marketValueFactor>1.3</marketValueFactor>
+        <statFactors>
+            <MoveSpeed>0.9</MoveSpeed>
+        </statFactors>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>WookieeVenerable</defName>
+        <label>venerable</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <healthScaleFactor>0.90</healthScaleFactor>
+        <marketValueFactor>1.6</marketValueFactor>
+        <statFactors>
+            <MoveSpeed>0.7</MoveSpeed>
+        </statFactors>
+    </LifeStageDef>
+
+    <LifeStageDef>
+        <defName>WookieeElderly</defName>
+        <label>elderly</label>
+        <visible>false</visible>
+        <reproductive>true</reproductive>
+        <healthScaleFactor>0.5</healthScaleFactor>
+        <marketValueFactor>2.0</marketValueFactor>
+        <statFactors>
+            <MoveSpeed>0.5</MoveSpeed>
+        </statFactors>
+    </LifeStageDef>
+
+</Defs>
