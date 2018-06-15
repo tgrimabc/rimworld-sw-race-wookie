@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Wookiee</defName>
+    <race>Alien_Wookiee</race>
+    <combatPower>40</combatPower>
+    <baseRecruitDifficulty>0.70</baseRecruitDifficulty>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Wookiee</defName>
+    <label>Wookiee</label>
+    <defaultFactionType>PlayerTribe</defaultFactionType>
+    <backstoryCategory>Wookiee</backstoryCategory>
+    <apparelTags>
+      <li>Tribal</li>
+    </apparelTags>
+    <apparelMoney>
+      <min>200</min>
+      <max>400</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerPersonWookieeM</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[WookieefirstM] [Wookieelast]</li>
+        <li>name->[badasswook] [WookieefirstM]</li>
+        <li>name->[WookieefirstM] '[badasswook]' [Wookieelast]</li>
+        <li>name->[WookieefirstM] [badasswook]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>WookieefirstM</keyword>
+          <path>Wookiee_Names/WookieeM</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Wookieelast</keyword>
+          <path>Wookiee_Names/Wookieelast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badasswook</keyword>
+          <path>Wookiee_Names/Concepts_Wookiee</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerPersonWookieeF</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[WookieefirstF] [Wookieelast]</li>
+        <li>name->[badasswook] [WookieefirstF]</li>
+        <li>name->[WookieefirstF] '[badasswook]' [Wookieelast]</li>
+        <li>name->[WookieefirstF] [badasswook]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>WookieefirstF</keyword>
+          <path>Wookiee_Names/WookieeF</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>Wookieelast</keyword>
+          <path>Wookiee_Names/Wookieelast</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badasswook</keyword>
+          <path>Wookiee_Names/Concepts_Wookiee</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
