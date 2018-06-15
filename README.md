@@ -5,4 +5,4 @@ Depends on
 - Humanoid Alien Race Framework - https://github.com/erdelf/AlienRaces
 
 Credit
-@tgrimm92 - Code and Art
+tgrimm92 - Code and Art
