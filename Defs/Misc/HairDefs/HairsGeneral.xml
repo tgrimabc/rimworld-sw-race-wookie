@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HairDef>
+        <defName>Wookiee_Hair</defName>
+        <label>wookiee_hair</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Wookiee/Hairs/Wookiee_Hair</texPath>
+		<hairTags>
+		    <li>wookieehairboi</li>
+		</hairTags>
+    </HairDef>
+
+</Defs>
