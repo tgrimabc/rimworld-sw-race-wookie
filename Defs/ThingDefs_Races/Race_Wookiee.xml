@@ -34,11 +34,82 @@
         </comps>
         <drawGUIOverlay>true</drawGUIOverlay>
     </ThingDef>
-    
+    <AlienRace.RaceSettings>
+		<defName>Wookiee_RaceSettings</defName>    
+        <pawnKindSettings>
+            <alienslavekinds>
+                <li>
+                    <kindDefs>
+                        <li>WookieeSlave</li>
+                    </kindDefs>
+                    <chance>0.60</chance>
+                </li>
+            </alienslavekinds>
+            <alienrefugeekinds>
+                <li> 
+                    <kindDefs>
+		    	        <li>Wookiee_Penitent</li>
+                        <li>Wookiee_Archer</li>
+                        <li>Wookiee_Warrior</li>
+                        <li>Wookiee_Hunter</li>
+			            <li>Wookiee_HeavyArcher</li>
+					    <li>Wookiee_Berserker</li>
+				        <li>Wookiee_ChiefMelee</li>
+                        <li>Wookiee_ChiefRanged</li>
+                    </kindDefs> 
+                    <chance>50.0</chance>                        
+                </li>
+            </alienrefugeekinds>
+            <startingColonists>
+		        <li>
+			        <pawnKindEntries>
+				        <li>
+                            <kindDefs>
+					            <li>Wookiee_Penitent</li>
+                                <li>Wookiee_Archer</li>
+                                <li>Wookiee_Warrior</li>
+                                <li>Wookiee_Hunter</li>
+			                    <li>Wookiee_HeavyArcher</li>
+					            <li>Wookiee_Berserker</li>
+				                <li>Wookiee_ChiefMelee</li>
+                                <li>Wookiee_ChiefRanged</li>
+                            </kindDefs>
+                            <chance>10.0</chance>
+				        </li>
+				    </pawnKindEntries>                       
+				    <factionDefs>
+				        <li>WookieePlayerTribe</li> 
+				    </factionDefs>
+                </li>               
+		    </startingColonists>
+            <alienwandererkinds>
+                <li> 
+                    <pawnKindEntries>
+                        <li>
+                            <kindDefs>
+                                <li>Wookiee_Penitent</li>
+                                <li>Wookiee_Archer</li>
+                                <li>Wookiee_Warrior</li>
+                                <li>Wookiee_Hunter</li>
+	    	                    <li>Wookiee_HeavyArcher</li>
+					            <li>Wookiee_Berserker</li>
+			                    <li>Wookiee_ChiefMelee</li>
+                                <li>Wookiee_ChiefRanged</li>
+                            </kindDefs> 
+                            <chance>50.0</chance>
+                        </li>
+                    </pawnKindEntries>
+                    <factionDefs>
+					   <li>WookieePlayerTribe</li> 
+				    </factionDefs>                         
+                </li>
+            </alienwandererkinds>
+        </pawnKindSettings>
+    </AlienRace.RaceSettings>    
     <AlienRace.ThingDef_AlienRace ParentName="BaseWookiee">
         <defName>Alien_Wookiee</defName>
-        <label>wookiee</label>
-        <description>Wookiees are devoted, loyal friends and are very distrustful of strangers. Life debt is sacred to them.</description>
+        <label>Wookiee</label>
+        <description>Wookiees.</description>
         <statBases>
             <MarketValue>2000</MarketValue>
             <MoveSpeed>5.0</MoveSpeed>
@@ -46,7 +117,7 @@
 			<PsychicSensitivity>0.25</PsychicSensitivity>
             <ComfyTemperatureMin>-30</ComfyTemperatureMin>
             <ComfyTemperatureMax>30</ComfyTemperatureMax>
-            <LeatherAmount>30</LeatherAmount>
+            <LeatherAmount>60</LeatherAmount>
         </statBases>
         <tools>
             <li>
@@ -91,7 +162,7 @@
                 <power>5</power>
                 <cooldownTime>1.9</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-                <commonality>0.2</commonality>
+                <chanceFactor>0.2</chanceFactor>
             </li>
         </tools>
         <race>
@@ -101,8 +172,7 @@
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>600</lifeExpectancy>
 	        <leatherDef>Wookiee_Leather</leatherDef>
-    	    <meatLabel>wookiee meat</meatLabel>
-            <meatColor>(192,57,43)</meatColor>
+    	    <meatLabel>Wookiee meat</meatLabel>
             <nameCategory>HumanStandard</nameCategory>
             <body>Human</body>
             <baseBodySize>1.25</baseBodySize>
@@ -199,6 +269,8 @@
                     <aliencrowntypes>
                         <li>Average_Normal</li>
                     </aliencrowntypes>
+                    <useGenderedHeads>true</useGenderedHeads>
+                    <useGenderedBodies>true</useGenderedBodies>
                     <alienskincolorgen Class="ColorGenerator_Options">
                         <options>
                             <li>
@@ -250,77 +322,8 @@
                 </li>
             </graphicPaths>
             <hairSettings>
-                <hasHair>true</hasHair>
-            </hairSettings>
-            <pawnKindSettings>
-                <alienslavekinds>
-                    <li>
-                        <kindDefs>
-                            <li>WookieeSlave</li>
-                        </kindDefs>
-                            <chance>0.60</chance>
-                    </li>
-                </alienslavekinds>
-                 <alienrefugeekinds>
-                    <li> 
-                        <kindDefs>
-					        <li>Wookiee_Penitent</li>
-                            <li>Wookiee_Archer</li>
-                            <li>Wookiee_Warrior</li>
-                            <li>Wookiee_Hunter</li>
-				            <li>Wookiee_HeavyArcher</li>
-						    <li>Wookiee_Berserker</li>
-				            <li>Wookiee_ChiefMelee</li>
-                            <li>Wookiee_ChiefRanged</li>
-                        </kindDefs> 
-                        <chance>50.0</chance>                        
-                    </li>
-                </alienrefugeekinds>
-                <startingColonists>
-				    <li>
-				        <pawnKindEntries>
-					        <li>
-                                <kindDefs>
-						            <li>Wookiee_Penitent</li>
-                                    <li>Wookiee_Archer</li>
-                                    <li>Wookiee_Warrior</li>
-                                    <li>Wookiee_Hunter</li>
-				                    <li>Wookiee_HeavyArcher</li>
-						            <li>Wookiee_Berserker</li>
-				                    <li>Wookiee_ChiefMelee</li>
-                                    <li>Wookiee_ChiefRanged</li>
-                                </kindDefs>
-                                <chance>10.0</chance>
-					        </li>
-				        </pawnKindEntries>                       
-					    <factionDefs>
-						   <li>WookieePlayerTribe</li> 
-					    </factionDefs>
-                    </li>               
-			    </startingColonists>
-                <alienwandererkinds>
-                    <li> 
-                        <pawnKindEntries>
-                            <li>
-                                <kindDefs>
-                                    <li>Wookiee_Penitent</li>
-                                    <li>Wookiee_Archer</li>
-                                    <li>Wookiee_Warrior</li>
-                                    <li>Wookiee_Hunter</li>
-				                    <li>Wookiee_HeavyArcher</li>
-						            <li>Wookiee_Berserker</li>
-				                    <li>Wookiee_ChiefMelee</li>
-                                    <li>Wookiee_ChiefRanged</li>
-                                </kindDefs> 
-                                <chance>50.0</chance>
-                            </li>
-                        </pawnKindEntries>
-                        <factionDefs>
-						   <li>WookieePlayerTribe</li> 
-					    </factionDefs>                         
-                    </li>
-                </alienwandererkinds>
-            </pawnKindSettings>        
+                <hasHair>false</hasHair>
+            </hairSettings>        
 	        <thoughtSettings>
                 <cannotReceiveThoughts>
                     <li>Naked</li>

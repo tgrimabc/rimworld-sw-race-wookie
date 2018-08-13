@@ -2,7 +2,7 @@
 <Defs>
 
 	<ScenarioDef>
-		<defName>WookieeScenario</defName>
+		<defName>WookieeRace_Scenario</defName>
 		<label>Wookiee New Beginning</label>
 		<description>The Wookiee are looking new beginning. Now, it's time to build up a new home.\n\nNote: Since you'll start poor and research slowly, this is a difficult scenario.</description>
 		<scenario>
