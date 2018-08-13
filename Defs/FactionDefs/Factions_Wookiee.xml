@@ -13,7 +13,7 @@
         <canMakeRandomly>true</canMakeRandomly>
         <canSiege>true</canSiege>
         <canStageAttacks>true</canStageAttacks>
-        <expandingIconTexture>World/WorldObjects/Expanding/WookieeFactionBase</expandingIconTexture>
+        <expandingIconTexture>World/Expanding/WookieeFactionBase</expandingIconTexture>
         <colorSpectrum>
         </colorSpectrum>
         <geneticVariance>0.1</geneticVariance>
@@ -21,12 +21,12 @@
 	    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
         <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
         <techLevel>Neolithic</techLevel>
-	    <backstoryCategory>Tribal</backstoryCategory>
+	    <backstoryCategory>Wookiee_Backstory</backstoryCategory>
         <goodwillDailyGain>0.25</goodwillDailyGain>
         <goodwillDailyFall>0.25</goodwillDailyFall>
         <leaderTitle>chief</leaderTitle>
         <hairTags>
-			<li>wookieehairboi</li>
+			<li>TGwookieehair</li>
 		</hairTags>
         <raidCommonalityFromPointsCurve>
             <points>
@@ -65,14 +65,14 @@
                 <kindDef>Combat</kindDef>
                 <commonality>100</commonality>
                 <options>
-                    <Tribal_Penitent>5</Tribal_Penitent>
-                    <Tribal_Warrior>5</Tribal_Warrior>
-                    <Tribal_Archer>10</Tribal_Archer>
-                    <Tribal_Hunter>10</Tribal_Hunter>
-                    <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-                    <Tribal_Berserker>5</Tribal_Berserker>
-                    <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
-                    <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+                    <Wookiee_Penitent>5</Wookiee_Penitent>
+                    <Wookiee_Warrior>5</Wookiee_Warrior>
+                    <Wookiee_Archer>10</Wookiee_Archer>
+                    <Wookiee_Hunter>10</Wookiee_Hunter>
+                    <Wookiee_HeavyArcher>10</Wookiee_HeavyArcher>
+                    <Wookiee_Berserker>5</Wookiee_Berserker>
+                    <Wookiee_ChiefRanged>3</Wookiee_ChiefRanged>
+                    <Wookiee_ChiefMelee>1.5</Wookiee_ChiefMelee>
                 </options>  
             </li>
             <li>
@@ -80,10 +80,10 @@
                 <kindDef>Combat</kindDef>
                 <commonality>60</commonality>
                 <options>
-                    <Tribal_Archer>10</Tribal_Archer>
-                    <Tribal_Hunter>10</Tribal_Hunter>
-                    <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-                    <Tribal_ChiefRanged>5</Tribal_ChiefRanged>
+                    <Wookiee_Archer>10</Wookiee_Archer>
+                    <Wookiee_Hunter>10</Wookiee_Hunter>
+                    <Wookiee_HeavyArcher>10</Wookiee_HeavyArcher>
+                    <Wookiee_ChiefRanged>5</Wookiee_ChiefRanged>
                 </options>
             </li>
             <li>
@@ -91,29 +91,29 @@
                 <kindDef>Combat</kindDef>
                 <commonality>60</commonality>
                 <options>
-                    <Tribal_Penitent>10</Tribal_Penitent>
-                    <Tribal_Warrior>10</Tribal_Warrior>
-                    <Tribal_Berserker>10</Tribal_Berserker>
-                    <Tribal_ChiefMelee>5</Tribal_ChiefMelee>
+                    <Wookiee_Penitent>10</Wookiee_Penitent>
+                    <Wookiee_Warrior>10</Wookiee_Warrior>
+                    <Wookiee_Berserker>10</Wookiee_Berserker>
+                    <Wookiee_ChiefMelee>5</Wookiee_ChiefMelee>
                 </options>
             </li>
             <li>
                 <!-- Peaceful -->
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <Tribal_Warrior>20</Tribal_Warrior>
-                    <Tribal_Archer>10</Tribal_Archer>
-                    <Tribal_Hunter>10</Tribal_Hunter>
-                    <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-                    <Tribal_Berserker>5</Tribal_Berserker>
-                    <Tribal_ChiefRanged>3</Tribal_ChiefRanged>
-                    <Tribal_ChiefMelee>1.5</Tribal_ChiefMelee>
+                    <Wookiee_Warrior>20</Wookiee_Warrior>
+                    <Wookiee_Archer>10</Wookiee_Archer>
+                    <Wookiee_Hunter>10</Wookiee_Hunter>
+                    <Wookiee_HeavyArcher>10</Wookiee_HeavyArcher>
+                    <Wookiee_Berserker>5</Wookiee_Berserker>
+                    <Wookiee_ChiefRanged>3</Wookiee_ChiefRanged>
+                    <Wookiee_ChiefMelee>1.5</Wookiee_ChiefMelee>
                 </options>
             </li>
             <li>
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <Tribal_Trader>1</Tribal_Trader>
+                    <Wookiee_Trader>1</Wookiee_Trader>
                 </traders>
                 <carriers>
                     <Muffalo>6</Muffalo>
@@ -122,26 +122,26 @@
                     <Elephant>2</Elephant>
                 </carriers>
                 <guards>
-                    <Tribal_Warrior>7</Tribal_Warrior>
-                    <Tribal_Archer>10</Tribal_Archer>
-                    <Tribal_Hunter>10</Tribal_Hunter>
-                    <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-                    <Tribal_Berserker>7</Tribal_Berserker>
+                    <Wookiee_Warrior>7</Wookiee_Warrior>
+                    <Wookiee_Archer>10</Wookiee_Archer>
+                    <Wookiee_Hunter>10</Wookiee_Hunter>
+                    <Wookiee_HeavyArcher>10</Wookiee_HeavyArcher>
+                    <Wookiee_Berserker>7</Wookiee_Berserker>
                 </guards>
             </li>
             <li>
-                <kindDef>Combat</kindDef>
+                <kindDef>Settlement</kindDef>
                 <options>
-                    <Tribal_Warrior>7</Tribal_Warrior>
-                    <Tribal_Archer>10</Tribal_Archer>
-                    <Tribal_Hunter>10</Tribal_Hunter>
-                    <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-                    <Tribal_Berserker>7</Tribal_Berserker>
-                    <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+                    <Wookiee_Warrior>7</Wookiee_Warrior>
+                    <Wookiee_Archer>10</Wookiee_Archer>
+                    <Wookiee_Hunter>10</Wookiee_Hunter>
+                    <Wookiee_HeavyArcher>10</Wookiee_HeavyArcher>
+                    <Wookiee_Berserker>7</Wookiee_Berserker>
+                    <Wookiee_ChiefRanged>10</Wookiee_ChiefRanged>
                 </options>
             </li>
         </pawnGroupMakers>    
-        <homeIconPath>World/WorldObjects/TribalFactionBase</homeIconPath>
+        <homeIconPath>World/TribalFactionBase</homeIconPath>
     </FactionDef>
 
 </Defs>

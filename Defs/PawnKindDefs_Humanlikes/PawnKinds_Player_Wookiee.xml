@@ -14,7 +14,7 @@
     <defName>Wookiee</defName>
     <label>member</label>
     <defaultFactionType>WookieePlayerTribe</defaultFactionType>
-    <backstoryCategory>Tribal</backstoryCategory>
+    <backstoryCategory>Wookiee_Backstory</backstoryCategory>
     <apparelTags>
       <li>Neolithic</li>
     </apparelTags>

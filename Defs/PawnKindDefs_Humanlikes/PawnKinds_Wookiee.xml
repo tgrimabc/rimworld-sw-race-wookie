@@ -7,7 +7,7 @@
   <PawnKindDef Name="WookieeBase" Abstract="True">
     <race>Alien_Wookiee</race>
     <defaultFactionType>WookieeTribe</defaultFactionType>
-	  <backstoryCategory>Tribal</backstoryCategory>
+	  <backstoryCategory>Wookiee_Backstory</backstoryCategory>
     <baseRecruitDifficulty>0.65</baseRecruitDifficulty>
     <invNutrition>2.55</invNutrition>
     <invFoodDef>Pemmican</invFoodDef>

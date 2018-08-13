@@ -7,12 +7,13 @@
 		<label>Wookiee Clan</label>
 		<description>Wookiee Tribal Start.</description>
 		<isPlayer>true</isPlayer>
-		<pawnsPlural>tribespeople</pawnsPlural>
+		<pawnSingular>tribespeople</pawnSingular>
+		<pawnsPlural>tribespeoples</pawnsPlural>
 		<basicMemberKind>Wookiee</basicMemberKind>
         <techLevel>Neolithic</techLevel>
-		<backstoryCategory>Tribal</backstoryCategory>
-		<homeIconPath>World/WorldObjects/TribalFactionBase</homeIconPath>
-    	<expandingIconTexture>World/WorldObjects/Expanding/WookieeFactionBase</expandingIconTexture>
+		<backstoryCategory>Wookiee_Backstory</backstoryCategory>
+		<homeIconPath>World/TribalFactionBase</homeIconPath>
+    	<expandingIconTexture>World/Expanding/WookieeFactionBase</expandingIconTexture>
 		<pawnNameMaker>NamerPersonTribal</pawnNameMaker>
         <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
         <factionNameMaker>NamerFactionTribal</factionNameMaker>
@@ -23,7 +24,7 @@
 			<li>TribalStart</li>
 		</startingResearchTags>
         <hairTags>
-			<li>wookieehairboi</li>
+			<li>TGwookieehair</li>
 		</hairTags>
         <apparelStuffFilter>
 			<thingDefs>
