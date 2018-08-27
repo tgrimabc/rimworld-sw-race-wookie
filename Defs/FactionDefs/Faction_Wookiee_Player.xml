@@ -11,7 +11,9 @@
 		<pawnsPlural>tribespeoples</pawnsPlural>
 		<basicMemberKind>Wookiee</basicMemberKind>
         <techLevel>Neolithic</techLevel>
-		<backstoryCategory>Wookiee_Backstory</backstoryCategory>
+	    <backstoryCategories>
+            <li>Wookiee_Backstory</li>
+        </backstoryCategories>
 		<homeIconPath>World/TribalFactionBase</homeIconPath>
     	<expandingIconTexture>World/Expanding/WookieeFactionBase</expandingIconTexture>
 		<pawnNameMaker>NamerPersonTribal</pawnNameMaker>

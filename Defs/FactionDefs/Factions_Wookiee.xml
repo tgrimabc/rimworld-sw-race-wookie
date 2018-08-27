@@ -21,7 +21,9 @@
 	    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
         <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
         <techLevel>Neolithic</techLevel>
-	    <backstoryCategory>Wookiee_Backstory</backstoryCategory>
+	    <backstoryCategories>
+            <li>Wookiee_Backstory</li>
+        </backstoryCategories>
         <goodwillDailyGain>0.25</goodwillDailyGain>
         <goodwillDailyFall>0.25</goodwillDailyFall>
         <leaderTitle>chief</leaderTitle>
