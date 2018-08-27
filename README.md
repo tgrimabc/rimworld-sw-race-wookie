@@ -19,5 +19,7 @@ Balancing to match Wookie traits.
 
 ## Credit
 **Code:** Tgrimm92
+
 **Art:** Tgrimm92
+
 **Debugging:** Soggynoddle, Chicken Plucker
