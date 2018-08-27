@@ -194,7 +194,7 @@
                     <minAge>0</minAge>
                 </li>
                 <li>
-                    <def>WookieekYoungAdult</def>
+                    <def>WookieeYoungAdult</def>
                     <minAge>12</minAge>
                 </li>
                 <li>
@@ -248,7 +248,6 @@
         <alienRace>   
             <generalSettings>
                 <humanRecipeImport>true</humanRecipeImport>
-                <pawnsSpecificBackstories>true</pawnsSpecificBackstories>
                 <immuneToAge>false</immuneToAge>
                 <forcedRaceTraitEntries>
                     <li>

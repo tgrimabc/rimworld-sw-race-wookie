@@ -17,7 +17,7 @@
     </LifeStageDef>
 
     <LifeStageDef>
-        <defName>WookieekYoungAdult</defName>
+        <defName>WookieeYoungAdult</defName>
         <label>youngadult</label>
         <reproductive>true</reproductive>
         <bodySizeFactor>0.5</bodySizeFactor>
