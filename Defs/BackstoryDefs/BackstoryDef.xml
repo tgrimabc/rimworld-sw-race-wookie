@@ -8,7 +8,7 @@
     <defName>Wookiee_Monk</defName>
     <title>Battle monk</title>
 	  <titleShort>Monk kid</titleShort>
-    <baseDescription>NAME was born in an ancient monastery devoted to martial arts. HECAP was raised to master various forms of physical combat and extend his physical limitations.</baseDescription>
+    <baseDescription>[PAWN_nameFull] was born in an ancient monastery devoted to martial arts. HECAP was raised to master various forms of physical combat and extend his physical limitations.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Childhood</slot>
@@ -35,7 +35,7 @@
     <defName>Wookiee_Thief</defName>
     <title>Wookiee thief</title>
     <titleShort>Thief</titleShort>
-    <baseDescription>NAME lived out HIS childhood as a theif, stealing what HECAP needed to survive.</baseDescription>
+    <baseDescription>[PAWN_nameFull] lived out HIS childhood as a theif, stealing what HECAP needed to survive.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Childhood</slot>
@@ -62,7 +62,7 @@
     <defName>Wookiee_Adopt</defName>
     <title>Adopted alien</title>
     <titleShort>Adopted</titleShort>
-    <baseDescription>Rescued from a strange escape pod, NAME was taken in and raised by an old farmer and his wife. Though HECAP never got the hang of farming, HIS great strength was a life-saver for the elderly Kents...</baseDescription>
+    <baseDescription>Rescued from a strange escape pod, [PAWN_nameFull] was taken in and raised by an old farmer and his wife. Though HECAP never got the hang of farming, HIS great strength was a life-saver for the elderly Kents...</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Childhood</slot>
@@ -93,7 +93,7 @@
     <defName>Wookiee_Tribe_kid</defName>
     <title>Wookiee tribe kid</title>
     <titleShort>Tribe kid</titleShort>
-    <baseDescription>NAME was born in a small village. HECAP had to learn to carry HIS weight and keep the tribe fed from an early age.</baseDescription>
+    <baseDescription>[PAWN_nameFull] was born in a small village. HECAP had to learn to carry HIS weight and keep the tribe fed from an early age.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Childhood</slot>
@@ -120,7 +120,7 @@
     <defName>Wookiee_Core_Kid</defName>
     <title>Wookiee crafter</title>
     <titleShort>Crafter kid</titleShort>
-    <baseDescription>NAME has always been making little things for HIS family. Naturally, they encouraged his skill with craftsmanship, and HECAP is developing into quite the artisan.</baseDescription>
+    <baseDescription>[PAWN_nameFull] has always been making little things for HIS family. Naturally, they encouraged his skill with craftsmanship, and HECAP is developing into quite the artisan.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Childhood</slot>
@@ -143,7 +143,7 @@
     <defName>Wookiee_Rebel_Kid</defName>
     <title>Wookiee rebel kid</title>
     <titleShort>Rebel kid</titleShort>
-    <baseDescription>NAME is a rebellious free-spirited child. A real firecracker!</baseDescription>
+    <baseDescription>[PAWN_nameFull] is a rebellious free-spirited child. A real firecracker!</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Childhood</slot>
@@ -168,9 +168,9 @@
 
   <AlienRace.BackstoryDef>
     <defName>Wookiee_Spacer_Kid</defName>
-    <title>Spacer wookiee</title>
+    <title>Spacer Wookiee</title>
     <titleShort>Spacer</titleShort>
-    <baseDescription>NAME was born on the family's moving home - a sublight long-haul cargo cruiser. As one of the few space-faring Wookiee HECAP grew up learning to wheel, deal, and steal enough to keep the ship in spaceworthy condition and delivering cargo on schedule.</baseDescription>
+    <baseDescription>[PAWN_nameFull] was born on the family's moving home - a sublight long-haul cargo cruiser. As one of the few space-faring Wookiee HECAP grew up learning to wheel, deal, and steal enough to keep the ship in spaceworthy condition and delivering cargo on schedule.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Childhood</slot>
@@ -197,7 +197,7 @@
     <defName>Wookiee_Child_Servant</defName>
     <title>Wookiee child servant</title>
     <titleShort>Child servant</titleShort>
-    <baseDescription>NAME was born and raised as a servent in the household of a powerful tribal leader. HECAP learned all the basic skills from the tribal women who raised all the village's children.</baseDescription>
+    <baseDescription>[PAWN_nameFull] was born and raised as a servent in the household of a powerful tribal leader. HECAP learned all the basic skills from the tribal women who raised all the village's children.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Childhood</slot>
@@ -224,7 +224,7 @@
     <defName>Wookiee_Tribal_Child</defName>
     <title>Wookiee tribe child</title>
 	  <titleShort>Tribe child</titleShort>
-    <baseDescription>Most of the Wookiee people are simple tribesmen and women, like NAME. A hardy people, due to the harsh environment.</baseDescription>
+    <baseDescription>Most of the Wookiee people are simple tribesmen and women, like [PAWN_nameFull]. A hardy people, due to the harsh environment.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Childhood</slot>
@@ -249,7 +249,7 @@
     <defName>Wookiee_Battle_Monk</defName>
     <title>Wookiee battle monk</title>
 	  <titleShort>Battle monk</titleShort>
-    <baseDescription>NAME spent HIS adolescent years training in an ancient monastery devoted to martial arts. HECAP has masterered several forms of physical combat and extended HIS physical limitations.</baseDescription>
+    <baseDescription>[PAWN_nameFull] spent HIS adolescent years training in an ancient monastery devoted to martial arts. HECAP has masterered several forms of physical combat and extended HIS physical limitations.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -276,7 +276,7 @@
     <defName>Wookiee_Tribal_Adult</defName>
     <title>Wookiee tribal adult</title>
 	  <titleShort>Tribal</titleShort>
-    <baseDescription>Most of the Wookiee people are simple tribesmen and women, like NAME. A hardy people, due to the harsh environment.</baseDescription>
+    <baseDescription>Most of the Wookiee people are simple tribesmen and women, like [PAWN_nameFull]. A hardy people, due to the harsh environment.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -299,7 +299,7 @@
     <defName>Wookiee_Builder</defName>
     <title>Wookiee builder</title>
 	  <titleShort>Builder</titleShort>
-    <baseDescription>Facing the rough winter nights makes you appreciate a good hut. As such, a good builder is a valued member of any Wookiee community.</baseDescription>
+    <baseDescription>[PAWN_nameFull] facing the rough winter nights makes you appreciate a good hut. As such, a good builder is a valued member of any Wookiee community.</baseDescription>
 	  <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -322,7 +322,7 @@
     <defName>Wookiee_Weapon_Smith</defName>
     <title>Wookiee weapon smith</title>
     <titleShort>Weapon smith</titleShort>
-    <baseDescription>NAME found HECAP had a natural talent and love for making blades and weaponry. HECAP has made sure HIS tribe has the finest weapons HECAP can craft.</baseDescription>
+    <baseDescription>[PAWN_nameFull] found HECAP had a natural talent and love for making blades and weaponry. HECAP has made sure HIS tribe has the finest weapons HECAP can craft.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -345,7 +345,7 @@
     <defName>Wookiee_Medic</defName>
     <title>Wookiee medic</title>
     <titleShort>Medic</titleShort>
-    <baseDescription>NAME tends the wounds of the warriors and hunters wounded in combat, and tends to the more mundane illnesses, fevers and injuries among the tribe. HECAP is very well respected for HIS talents.</baseDescription>
+    <baseDescription>[PAWN_nameFull] tends the wounds of the warriors and hunters wounded in combat, and tends to the more mundane illnesses, fevers and injuries among the tribe. HECAP is very well respected for HIS talents.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -368,7 +368,7 @@
     <defName>Wookiee_Herblist</defName>
     <title>Wookiee herbalist</title>
     <titleShort>Herbalist</titleShort>
-    <baseDescription>NAME tends HIS herbs to create many various food additives and curatives.</baseDescription>
+    <baseDescription>[PAWN_nameFull] tends HIS herbs to create many various food additives and curatives.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -395,7 +395,7 @@
     <defName>Wookiee_Hunter</defName>
     <title>Wookiee hunter</title>
     <titleShort>Hunter</titleShort>
-    <baseDescription>NAME is a hunter. HECAP makes sure HIS tribe is well fed, learning the game paths and watering holes. HE makes sure to keep the predators down as well, for HIS own people, and the game they share.</baseDescription>
+    <baseDescription>[PAWN_nameFull] is a hunter. HECAP makes sure HIS tribe is well fed, learning the game paths and watering holes. HE makes sure to keep the predators down as well, for HIS own people, and the game they share.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -422,7 +422,7 @@
     <defName>Wookiee_Fighter</defName>
     <title>Wookiee fighter</title>
     <titleShort>Fighter</titleShort>
-    <baseDescription>NAME is a rank-and-file soldier for his tribe. HECAP keeps dangerous creatures or people from attacking the village, sometimes perhaps raiding other tribes for supplies or people... perhaps.</baseDescription>
+    <baseDescription>[PAWN_nameFull] is a rank-and-file soldier for his tribe. HECAP keeps dangerous creatures or people from attacking the village, sometimes perhaps raiding other tribes for supplies or people... perhaps.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -445,7 +445,7 @@
     <defName>Wookiee_Conscript</defName>
     <title>Wookiee conscript</title>
     <titleShort>Conscript</titleShort>
-    <baseDescription>NAME was conscripted into a medeival army, and trained as a soldier..</baseDescription>
+    <baseDescription>[PAWN_nameFull] was conscripted into a medeival army, and trained as a soldier..</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -468,7 +468,7 @@
     <defName>Wookiee_Champion</defName>
     <title>Wookiee champion</title>
     <titleShort>Champion</titleShort>
-    <baseDescription>NAME is HIS people's champion. HECAP has slain monsters, fought duels, and all the usual champion guff.</baseDescription>
+    <baseDescription>[PAWN_nameFull] is HIS people's champion. HECAP has slain monsters, fought duels, and all the usual champion guff.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -491,7 +491,7 @@
     <defName>Wookiee_Spacer_Adult</defName>
     <title>Wookiee spacer adult</title>
     <titleShort>Spacer</titleShort>
-    <baseDescription>NAME was a free-trader, roving the Rim searching for deals and opportunities for profit. Until now, HE was flying a ship, making deals with colonies like these... I wonder what happened?</baseDescription>
+    <baseDescription>[PAWN_nameFull] was a free-trader, roving the Rim searching for deals and opportunities for profit. Until now, HE was flying a ship, making deals with colonies like these... I wonder what happened?</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -518,7 +518,7 @@
     <defName>Wookiee_Rebel_Adult</defName>
     <title>Wookiee rebel adult</title>
     <titleShort>Rebel</titleShort>
-    <baseDescription>NAME is a rebellious free-spirit</baseDescription>
+    <baseDescription>[PAWN_nameFull] is a rebellious free-spirit</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -545,7 +545,7 @@
     <defName>Wookiee_Foodie</defName>
     <title>Wookiee foodie</title>
     <titleShort>Foodie</titleShort>
-    <baseDescription>NAME loves cooking, and just about anything to do with food.</baseDescription>
+    <baseDescription>[PAWN_nameFull] loves cooking, and just about anything to do with food.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -572,7 +572,7 @@
     <defName>Wookiee_Tracker</defName>
     <title>Wookiee tracker</title>
     <titleShort>Tracker</titleShort>
-    <baseDescription>NAME is renowned among HIS tribe for HIS sharp senses, and is always called for when something elusive needs tracking.</baseDescription>
+    <baseDescription>[PAWN_nameFull] is renowned among HIS tribe for HIS sharp senses, and is always called for when something elusive needs tracking.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
@@ -599,7 +599,7 @@
     <defName>Wookiee_Servant</defName>
     <title>Wookiee servant</title>
     <titleShort>Servant</titleShort>
-    <baseDescription>NAME was a servant to a powerful lord. HECAP was well-treated, and had a little free time to educate HIMself, and train some archery.</baseDescription>
+    <baseDescription>[PAWN_nameFull] was a servant to a powerful lord. HECAP was well-treated, and had a little free time to educate HIMself, and train some archery.</baseDescription>
     <bodyTypeMale>Male</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>
     <slot>Adulthood</slot>
