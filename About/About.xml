@@ -6,5 +6,26 @@
 		<url>https://github.com/tgrimabc</url>
 	<description>Wookiees are species of intelligent bipeds from the plant Kashyyyk. Wookiees are taller, stronger, and hairier than humans and most (if not all) other humanoid species.
 	
-	ComfyTemperature (-30,30)</description>
+	ComfyTemperature (-30,30)
+
+	Release adds the following features
+	Wookiee Pawns
+	Starting Scenario
+	Wookiee Faction
+
+	Add Ons
+	-Weapons
+
+	Dependencies
+	This mod depends on the alien race framework by Erdelf. You can view its original post here https://steamcommunity.com/workshop/filedetails/?id=839005762, but at the time of the writing of this post the release is on beta 18 while 1.0 is required. You can obtain 1.0 on their github https://github.com/erdelf/AlienRaces/releases. Until Erdelf updates versioning the 1.0 does work just ignore the fact that it is red in the mod list.
+
+	Source
+	https://github.com/tgrimabc?tab=repositories
+
+	Discord
+	https://discord.gg/ZBFxJHe
+
+	Patreon
+	https://www.patreon.com/user?u=13220445</description>
+	
 </ModMetaData>
