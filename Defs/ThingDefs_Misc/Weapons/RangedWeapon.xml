@@ -9,6 +9,7 @@
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/TGKashyyykLongGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
@@ -95,6 +96,7 @@
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/TGX1Carbine</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
@@ -182,6 +184,7 @@
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/TGBowcaster</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
@@ -269,6 +272,7 @@
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/TGLongBow</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <soundInteract>Bow_Large</soundInteract>
         <costList>
@@ -328,6 +332,7 @@
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/TGLongBowWithFeather</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <soundInteract>Bow_Large</soundInteract>
         <costStuffCount>5</costStuffCount>

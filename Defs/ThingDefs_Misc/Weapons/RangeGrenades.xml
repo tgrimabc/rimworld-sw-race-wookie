@@ -11,6 +11,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/TGSilverThermalDetonator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>Interact_Grenade</soundInteract>
 		<techLevel>Industrial</techLevel>
@@ -82,7 +83,7 @@
 		</projectile>
 	</ThingDef>
 
-<ThingDef ParentName="BaseMakeableGrenade">
+	<ThingDef ParentName="BaseMakeableGrenade">
 		<defName>TGBrownThermalDetonator</defName>
 		<label>brown thermal detonator</label>
 		<description>brown thermal detonator</description>
@@ -90,6 +91,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/TGBrownThermalDetonator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<soundInteract>Interact_Grenade</soundInteract>
 		<techLevel>Industrial</techLevel>
