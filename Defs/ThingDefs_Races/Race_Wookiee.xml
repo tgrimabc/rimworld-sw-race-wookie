@@ -2,45 +2,13 @@
 
 <Defs>
 <!-- =Wookiee Base = -->
-
-    <ThingDef Name="BaseWookiee" Abstract="True">
-        <thingClass>Pawn</thingClass>
-        <category>Pawn</category>
-        <selectable>true</selectable>
-        <tickerType>Normal</tickerType>
-        <altitudeLayer>Pawn</altitudeLayer>
-        <useHitPoints>false</useHitPoints>
-        <hasTooltip>true</hasTooltip>
-        <soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
-        <statBases>
-            <Mass>70</Mass>
-        </statBases>
-        <inspectorTabs>
-            <li>ITab_Pawn_Health</li>
-            <li>ITab_Pawn_Needs</li>
-            <li>ITab_Pawn_Character</li>
-            <li>ITab_Pawn_Training</li>
-            <li>ITab_Pawn_Social</li>
-            <li>ITab_Pawn_Guest</li>
-            <li>ITab_Pawn_Prisoner</li>
-            <li>ITab_Pawn_FormingCaravan</li>
-            <li>ITab_Pawn_Gear</li>
-            <li>ITab_Pawn_Log</li>
-        </inspectorTabs>
-        <comps>
-            <li>
-                <compClass>CompAttachBase</compClass>
-            </li>
-        </comps>
-        <drawGUIOverlay>true</drawGUIOverlay>
-    </ThingDef>
     <AlienRace.RaceSettings>
 		<defName>Wookiee_RaceSettings</defName>    
         <pawnKindSettings>
             <alienslavekinds>
                 <li>
                     <kindDefs>
-                        <li>WookieeSlave</li>
+                        <li>Wookiee_Slave</li>
                     </kindDefs>
                     <chance>0.60</chance>
                 </li>
@@ -105,8 +73,9 @@
                 </li>
             </alienwandererkinds>
         </pawnKindSettings>
-    </AlienRace.RaceSettings>    
-    <AlienRace.ThingDef_AlienRace ParentName="BaseWookiee">
+    </AlienRace.RaceSettings>
+
+    <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
         <defName>Alien_Wookiee</defName>
         <label>Wookiee</label>
         <description>Wookiees.</description>
@@ -125,14 +94,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>7</power>
-                <cooldownTime>1.7</cooldownTime>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>40</amount>
+                            <amount>14</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -142,14 +111,14 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>7</power>
-                <cooldownTime>1.7</cooldownTime>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
                 <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
                             <def>Stun</def>
-                            <amount>40</amount>
+                            <amount>14</amount>
                         </li>
                     </extraMeleeDamages>
                 </surpriseAttack>
@@ -159,10 +128,20 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>5</power>
+                <power>7</power>
                 <cooldownTime>1.9</cooldownTime>
                 <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
                 <chanceFactor>0.2</chanceFactor>
+            </li>
+            <li>
+		        <label>teeth</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <chanceFactor>0.07</chanceFactor>
             </li>
         </tools>
         <race>
@@ -172,13 +151,16 @@
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>600</lifeExpectancy>
 	        <leatherDef>Wookiee_Leather</leatherDef>
-    	    <meatLabel>Wookiee meat</meatLabel>
+    	    <meatLabel>Wookiee_Meat</meatLabel>
             <nameCategory>HumanStandard</nameCategory>
-            <body>Human</body>
-            <baseBodySize>1.25</baseBodySize>
-            <baseHealthScale>1</baseHealthScale>
+            <body>Wookiee_Body</body>
+            <baseBodySize>1.4</baseBodySize>
+            <baseHealthScale>1.2</baseHealthScale>
             <foodType>OmnivoreHuman, CarnivoreAnimal, OvivoreAnimal</foodType>
             <gestationPeriodDays>45</gestationPeriodDays>
+            <meatMarketValue>0.8</meatMarketValue>
+            <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
+            <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
             <litterSizeCurve>
                 <points>
                     <li>(0.5, 0)</li>
@@ -332,6 +314,8 @@
 	        </thoughtSettings>
         </alienRace>
         <recipes>
+            <li>InstallJoywire</li>
+            <li>InstallPainstopper</li>   
             <li>InstallArchotechEye</li>
             <li>InstallArchotechArm</li>
             <li>InstallArchotechLeg</li>
@@ -349,13 +333,71 @@
             <li>InstallCochlearImplant</li>
             <li>InstallPegLeg</li>
             <li>InstallWoodenFoot</li>
-            <li>InstallDenture</li>
-            <li>InstallJoywire</li>
-            <li>InstallPainstopper</li>
-            <li>InstallNaturalHeart</li>
-            <li>InstallNaturalLung</li>
-            <li>InstallNaturalKidney</li>
+            <li>InstallDenture</li>  
+            <li>InstallAj6Implant</li>
+            <li>InstallTuffBone</li>
+            <li>InstallFangs</li>
+            <li>InstallMetalJaw</li>
+            <li>InstallCyberSkull</li>
+            <li>InstallSkateFoot</li>
+            <li>InstallCyberleg</li>
+            <li>InstallJazzlerFinger</li>
+            <li>InstallShockHand</li>
+            <li>InstallClawHand</li>
+            <li>InstallHammerHand</li>
+            <li>InstallHeavyArm</li>
+            <li>InstallTargetingEye</li>          
+            <li>InstallCyberneticToe</li>
+            <li>InstallCyberneticFoot</li>
+            <li>InstallCyberneticLeg</li>
+            <li>InstallCyberneticFinger</li>
+            <li>InstallCyberneticHand</li>
+            <li>InstallCyberneticArm</li>
+            <li>InstallCyberneticEar</li>
+            <li>InstallCyberneticNose</li>
+            <li>InstallCyberneticEye</li>
+            <li>InstallCyberneticLiver</li>
+            <li>InstallCyberneticKidney</li>
+            <li>InstallCyberneticLung</li>
+            <li>InstallCyberneticHeart</li>
+            <li>InstallCyberneticStomach</li>           
+            <li>InstallProstheticToe</li>
+            <li>InstallProstheticFoot</li>
+            <li>InstallProstheticLeg</li>
+            <li>InstallProstheticFinger</li>
+            <li>InstallProstheticHand</li>
+            <li>InstallProstheticArm</li>
+            <li>InstallProstheticEar</li>
+            <li>InstallProstheticNose</li> 
+            <li>InstallProstheticEye</li>
+            <li>InstallArtificialLiver2Tier</li>           
+            <li>InstallArtificialKidney2Tier</li>           
+            <li>InstallArtificialLung2Tier</li>             
+            <li>InstallArtificialHeart2Tier</li>             
+            <li>InstallArtificialStomach2Tier</li>
+            <li>InstallArtificialLiver1Tier</li>     
+            <li>InstallArtificialKidney1Tier</li>                
+            <li>InstallArtificialLung1Tier</li>             
+            <li>InstallArtificialHeart1Tier</li>             
+            <li>InstallArtificialStomach1Tier</li>            
+            <li>InstallNaturalToe</li>
+            <li>InstallNaturalFoot</li>
+            <li>InstallNaturalLeg</li>
+            <li>InstallNaturalFinger</li>
+            <li>InstallNaturalHand</li>
+            <li>InstallNaturalArm</li>
+            <li>InstallNaturalEar</li>
+            <li>InstallNaturalNose</li>
+            <li>InstallNaturalJaw</li>
+            <li>InstallNaturalEye</li>
             <li>InstallNaturalLiver</li>
+            <li>InstallNaturalKidney</li>
+            <li>InstallNaturalLung</li>
+            <li>InstallNaturalHeart</li>
+            <li>InstallNaturalStomach</li>
+            <li>InstallNaturalSkull</li>
+            <li>InstallNaturalClaw</li>
+            <li>InstallNaturalFingerNail</li>
             <li>ExciseCarcinoma</li>
             <li>AdministerMechSerumHealer</li>
             <li>RemoveBodyPart</li>

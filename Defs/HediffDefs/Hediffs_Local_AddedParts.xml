@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialStomach1Tier</defName>
+        <label>artificial stomach tier 1</label>
+        <labelNoun>a artificial stomach tier 1</labelNoun>
+        <spawnThingOnRemoved>ArtificialStomach1Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialStomach2Tier</defName>
+        <label>artificial stomach tier 2</label>
+        <labelNoun>a artificial stomach tier 2</labelNoun>
+        <spawnThingOnRemoved>ArtificialStomach2Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticStomach</defName>
+        <label>cybernetic stomach</label>
+        <labelNoun>a cybernetic stomach</labelNoun>
+        <spawnThingOnRemoved>CyberneticStomach</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialHeart1Tier</defName>
+        <label>artificial heart tier 1</label>
+        <labelNoun>a artificial heart tier 1</labelNoun>
+        <spawnThingOnRemoved>ArtificialHeart1Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialHeart2Tier</defName>
+        <label>artificial heart tier 2</label>
+        <labelNoun>a artificial heart tier 2</labelNoun>
+        <spawnThingOnRemoved>ArtificialHeart2Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticHeart</defName>
+        <label>cybernetic heart</label>
+        <labelNoun>a cybernetic heart</labelNoun>
+        <spawnThingOnRemoved>CyberneticHeart</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialLung1Tier</defName>
+        <label>artificial lung tier 1</label>
+        <labelNoun>a artificial lung tier 1</labelNoun>
+        <spawnThingOnRemoved>ArtificialLung1Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialLung2Tier</defName>
+        <label>artificial lung tier 2</label>
+        <labelNoun>a artificial lung tier 2</labelNoun>
+        <spawnThingOnRemoved>ArtificialLung2Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticLung</defName>
+        <label>cybernetic lung</label>
+        <labelNoun>a cybernetic lung</labelNoun>
+        <spawnThingOnRemoved>CyberneticLung</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <makeImmuneTo>
+                    <li>Flu</li>
+                    <li>Plague</li>
+				</makeImmuneTo>
+			</li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialKidney1Tier</defName>
+        <label>artificial kidney tier 1</label>
+        <labelNoun>a artificial kidney tier 1</labelNoun>
+        <spawnThingOnRemoved>ArtificialKidney1Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialKidney2Tier</defName>
+        <label>artificial kidney tier 2</label>
+        <labelNoun>a artificial kidney tier 2</labelNoun>
+        <spawnThingOnRemoved>ArtificialKidney2Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticKidney</defName>
+        <label>cybernetic kidney</label>
+        <labelNoun>a cybernetic kidney</labelNoun>
+        <spawnThingOnRemoved>CyberneticKidney</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <makeImmuneTo>
+                    <li>WoundInfection</li>
+                    <li>SensoryMechanites</li>
+                    <li>FibrousMechanites</li>
+				</makeImmuneTo>
+			</li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialLiver1Tier</defName>
+        <label>artificial liver tier 1</label>
+        <labelNoun>a artificial liver tier 1</labelNoun>
+        <spawnThingOnRemoved>ArtificialLiver1Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>-0.15</infectionChance>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ArtificialLiver2Tier</defName>
+        <label>artificial liver tier 2</label>
+        <labelNoun>a artificial liver tier 2</labelNoun>
+        <spawnThingOnRemoved>ArtificialLiver2Tier</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.25</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>-0.2</infectionChance>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticLiver</defName>
+        <label>cybernetic liver</label>
+        <labelNoun>a cybernetic liver</labelNoun>
+        <spawnThingOnRemoved>CyberneticLiver</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>-0.25</infectionChance>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <makeImmuneTo>
+                    <li>Malaria</li>
+				</makeImmuneTo>
+			</li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>BlindEye</defName>
+        <label>blind eye</label>
+        <labelNoun>a blind eye</labelNoun>
+        <spawnThingOnRemoved>BlindEye</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>0</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ProstheticEye</defName>
+        <label>prosthetic eye</label>
+        <labelNoun>a prosthetic eye</labelNoun>
+        <spawnThingOnRemoved>ProstheticEye</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticEye</defName>
+        <label>cybernetic eye</label>
+        <labelNoun>a cybernetic eye</labelNoun>
+        <spawnThingOnRemoved>CyberneticEye</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>TargetingEye</defName>
+        <label>targeting Eye</label>
+        <labelNoun>a targeting Eye</labelNoun>
+        <spawnThingOnRemoved>TargetingEye</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ShootingAccuracyPawn>+0.5</ShootingAccuracyPawn>
+                    <AimingDelayFactor>+0.15</AimingDelayFactor>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ProstheticNose</defName>
+        <label>prosthetic nose</label>
+        <labelNoun>a prosthetic nose</labelNoun>
+        <spawnThingOnRemoved>ProstheticNose</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticNose</defName>
+        <label>cybernetic nose</label>
+        <labelNoun>a cybernetic nose</labelNoun>
+        <spawnThingOnRemoved>CyberneticNose</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ProstheticEar</defName>
+        <label>prosthetic ear</label>
+        <labelNoun>a prosthetic ear</labelNoun>
+        <spawnThingOnRemoved>ProstheticEar</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticEar</defName>
+        <label>cybernetic ear</label>
+        <labelNoun>a cybernetic ear</labelNoun>
+        <spawnThingOnRemoved>CyberneticEar</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ProstheticArm</defName>
+        <label>prosthetic arm</label>
+        <labelNoun>a prosthetic arm</labelNoun>
+        <spawnThingOnRemoved>ProstheticArm</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>8.2</power> <!-- Same as natural fist -->
+                        <cooldownTime>2</cooldownTime>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticArm</defName>
+        <label>cybernetic arm</label>
+        <labelNoun>a cybernetic arm</labelNoun>
+        <spawnThingOnRemoved>CyberneticArm</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>12</power> <!-- Same as natural fist -->
+                        <cooldownTime>2</cooldownTime>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>HeavyArm</defName>
+        <label>heavy arm</label>
+        <labelNoun>a heavy arm</labelNoun>
+        <spawnThingOnRemoved>HeavyArm</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.75</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>12</power> <!-- Same as natural fist -->
+                        <cooldownTime>2</cooldownTime>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ProstheticHand</defName>
+        <label>prosthetic hand</label>
+        <labelNoun>a prosthetic hand</labelNoun>
+        <spawnThingOnRemoved>ProstheticHand</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>8.2</power> <!-- Same as natural fist -->
+                        <cooldownTime>2</cooldownTime>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticHand</defName>
+        <label>cybernetic hand</label>
+        <labelNoun>a cybernetic hand</labelNoun>
+        <spawnThingOnRemoved>CyberneticHand</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>14</power> <!-- Same as natural fist -->
+                        <cooldownTime>2</cooldownTime>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>HammerHand</defName>
+        <label>hammer hand</label>
+        <labelNoun>a hammer hand</labelNoun>
+        <spawnThingOnRemoved>HammerHand</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>14</power> <!-- Same as natural fist -->
+                        <cooldownTime>2</cooldownTime>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ShockHand</defName>
+        <label>shock hand</label>
+        <labelNoun>a shock hand</labelNoun>
+        <spawnThingOnRemoved>ShockHand</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>14</power> <!-- Same as natural fist -->
+                        <cooldownTime>2</cooldownTime>                        
+                        <surpriseAttack>
+                            <extraMeleeDamages>
+                                <li>
+                                    <def>Stun</def>
+                                    <amount>75</amount>
+                                </li>
+                            </extraMeleeDamages>
+                        </surpriseAttack>
+                        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ProstheticFinger</defName>
+        <label>prosthetic finger</label>
+        <labelNoun>a prosthetic finger</labelNoun>
+        <spawnThingOnRemoved>ProstheticFinger</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticFinger</defName>
+        <label>cybernetic finger</label>
+        <labelNoun>a cybernetic finger</labelNoun>
+        <spawnThingOnRemoved>CyberneticFinger</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ProstheticLeg</defName>
+        <label>prosthetic leg</label>
+        <labelNoun>a prosthetic leg</labelNoun>
+        <spawnThingOnRemoved>ProstheticLeg</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticLeg</defName>
+        <label>cybernetic leg</label>
+        <labelNoun>a cybernetic leg</labelNoun>
+        <spawnThingOnRemoved>CyberneticLeg</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Cyberleg</defName>
+        <label>cyberleg</label>
+        <labelNoun>a cyberleg</labelNoun>
+        <spawnThingOnRemoved>Cyberleg</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.75</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ProstheticFoot</defName>
+        <label>prosthetic foot</label>
+        <labelNoun>a prosthetic foot</labelNoun>
+        <spawnThingOnRemoved>ProstheticFoot</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticFoot</defName>
+        <label>cybernetic foot</label>
+        <labelNoun>a cybernetic foot</labelNoun>
+        <spawnThingOnRemoved>CyberneticFoot</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>SkateFoot</defName>
+        <label>skate foot</label>
+        <labelNoun>a skate foot</labelNoun>
+        <spawnThingOnRemoved>SkateFoot</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.75</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>ProstheticToe</defName>
+        <label>prosthetic toe</label>
+        <labelNoun>a prosthetic toe</labelNoun>
+        <spawnThingOnRemoved>ProstheticToe</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>CyberneticToe</defName>
+        <label>cybernetic toe</label>
+        <labelNoun>a cybernetic toe</labelNoun>
+        <spawnThingOnRemoved>CyberneticToe</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>MetalJaw</defName>
+        <label>metal jaw</label>
+        <labelNoun>a metal jaw</labelNoun>
+        <spawnThingOnRemoved>MetalJaw</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.5</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>teeth</label>
+                        <capacities>
+                            <li>Bite</li>
+                        </capacities>
+                        <power>10</power> <!-- Same as natural fist -->
+                        <cooldownTime>2</cooldownTime>
+                        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Arm</defName>
+        <label>arm</label>
+        <labelNoun>a arm</labelNoun>
+        <spawnThingOnRemoved>Arm</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+        <comps>
+            <li Class="HediffCompProperties_VerbGiver">
+                <tools>
+                    <li>
+                        <label>fist</label>
+                        <capacities>
+                            <li>Blunt</li>
+                        </capacities>
+                        <power>8.2</power> <!-- Same as natural fist -->
+                        <cooldownTime>2</cooldownTime>
+                    </li>
+                </tools>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Claw</defName>
+        <label>claw</label>
+        <labelNoun>a claw</labelNoun>
+        <spawnThingOnRemoved>Claw</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>Skull</defName>
+        <label>skull</label>
+        <labelNoun>a skull</labelNoun>
+        <spawnThingOnRemoved>Skull</spawnThingOnRemoved>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1</partEfficiency>
+        </addedPartProps>
+    </HediffDef>
+
+</Defs>

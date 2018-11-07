@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- natural -->
+
+    <ThingDef Name="BodyPartNaturalBase" ParentName="BodyPartBase"  Abstract="True">
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItemNatural</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+        <thingCategories>
+            <li>BodyPartsNatural</li>
+        </thingCategories>
+        <statBases>
+            <DeteriorationRate>4.0</DeteriorationRate>
+        </statBases>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+            <researchPrerequisite>Prosthetics</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Stomach</defName>
+        <label>stomach</label>
+        <description>A biological human stomach.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Heart</defName>
+        <label>heart</label>
+        <description>A biological human heart.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Lung</defName>
+        <label>lung</label>
+        <description>A biological human lung.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>400</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Kidney</defName>
+        <label>kidney</label>
+        <description>A biological human kidney.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>250</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Liver</defName>
+        <label>liver</label>
+        <description>A biological human liver.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Jaw</defName>
+        <label>jaw</label>
+        <description>A biological human jaw.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>FingerNail</defName>
+        <label>finger nail</label>
+        <description>A  human finger nail.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Claw</defName>
+        <label>claw</label>
+        <description>A biological human claw.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Skull</defName>
+        <label>skull</label>
+        <description>A biological human skull.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Nose</defName>
+        <label>nose</label>
+        <description>A biological human nose.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Eye</defName>
+        <label>eye</label>
+        <description>A biological human eye.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>BlindEye</defName>
+        <label>blind eye</label>
+        <description>A biological human blind eye.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>100</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Ear</defName>
+        <label>ear</label>
+        <description>A biological human ear.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Arm</defName>
+        <label>arm</label>
+        <description>A biological human arm.</description>
+        <costList>
+            <Meat_Human>40</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Hand</defName>
+        <label>hand</label>
+        <description>A biological human hand.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>350</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Finger</defName>
+        <label>finger</label>
+        <description>A biological human finger.</description>
+        <costList>
+            <Meat_Human>10</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>200</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Leg</defName>
+        <label>leg</label>
+        <description>A biological human leg.</description>
+        <costList>
+            <Meat_Human>40</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Foot</defName>
+        <label>foot</label>
+        <description>A biological human foot.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>350</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartNaturalBase">
+        <defName>Toe</defName>
+        <label>toe</label>
+        <description>A biological human toe.</description>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+        </costList>
+        <statBases>
+            <MarketValue>200</MarketValue>
+            <Mass>2</Mass>
+        </statBases>
+    </ThingDef>
+
+    <!-- simple prosthetics (industrial tech) -->
+
+    <ThingDef Name="BodyPartProstheticBase" ParentName="BodyPartArtificialBase" Abstract="True">
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItemProsthetic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <workSpeedStat>SmithingSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+            <researchPrerequisite>Prosthetics</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialStomach1Tier</defName>
+        <label>artificial stomach tier 1</label>
+        <description>A artificial stomach tier 1.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialStomach2Tier</defName>
+        <label>artificial stomach tier 2</label>
+        <description>A artificial stomach tier 2.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>40</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialHeart1Tier</defName>
+        <label>artificial heart tier 1</label>
+        <description>A artificial heart tier 1.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialHeart2Tier</defName>
+        <label>artificial heart tier 2</label>
+        <description>A artificial heart tier 2.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>40</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialLung1Tier</defName>
+        <label>artificial lung tier 1</label>
+        <description>A artificial lung tier 1.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialLung2Tier</defName>
+        <label>artificial lung tier 2</label>
+        <description>A artificial lung tier 2.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>40</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialKidney1Tier</defName>
+        <label>artificial kidney tier 1</label>
+        <description>A artificial kidney tier 1.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialKidney2Tier</defName>
+        <label>artificial kidney tier 2</label>
+        <description>A artificial kidney tier 2.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>40</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialLiver1Tier</defName>
+        <label>artificial liver tier 1</label>
+        <description>A artificial liver tier 1.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ArtificialLiver2Tier</defName>
+        <label>artificial liver tier 2</label>
+        <description>A artificial liver tier 2.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>40</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ProstheticEye</defName>
+        <label>prosthetic eye</label>
+        <description>A prosthetic eye.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ProstheticNose</defName>
+        <label>prosthetic nose</label>
+        <description>A prosthetic nose.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ProstheticEar</defName>
+        <label>prosthetic ear</label>
+        <description>A prosthetic ear.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1250</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ProstheticArm</defName>
+        <label>prosthetic arm</label>
+        <description>An arm prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real arm.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>40</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>5</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ProstheticHand</defName>
+        <label>prosthetic hand</label>
+        <description>A prosthetic hand.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ProstheticFinger</defName>
+        <label>prosthetic finger</label>
+        <description>A prosthetic finger.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>15</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ProstheticLeg</defName>
+        <label>prosthetic leg</label>
+        <description>A leg prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real leg.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>40</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>8</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ProstheticFoot</defName>
+        <label>prosthetic foot</label>
+        <description>A prosthetic foot.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <WorkToMake>11000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>ProstheticToe</defName>
+        <label>prosthetic toe</label>
+        <description>A prosthetic toe.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>15</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>500</MarketValue>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>2</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>MetalJaw</defName>
+        <label>metal jaw</label>
+        <description>A metal jaw.</description>
+        <techLevel>Industrial</techLevel>
+        <costList>
+            <Steel>20</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MarketValue>900</MarketValue>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <!-- bionics (spacer tech) -->
+
+    <ThingDef Name="BodyPartBionicBase" ParentName="BodyPartProstheticBase" Abstract="True">
+        <graphicData>
+            <texPath>Things/Item/Health/HealthItemBionic</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Bionics</researchPrerequisite>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticStomach</defName>
+        <label>cybernetic stomach</label>
+        <description>An cybernetic stomach.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>4000</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticHeart</defName>
+        <label>cybernetic heart</label>
+        <description>An cybernetic heart.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticLung</defName>
+        <label>cybernetic lung</label>
+        <description>An cybernetic lung.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>4000</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticKidney</defName>
+        <label>cybernetic kidney</label>
+        <description>An cybernetic kidney.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>4000</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticLiver</defName>
+        <label>cybernetic liver</label>
+        <description>An cybernetic liver.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>4000</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticEye</defName>
+        <label>cybernetic eye</label>
+        <description>An cybernetic eye. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>2750</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticNose</defName>
+        <label>cybernetic nose</label>
+        <description>An cybernetic nose.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>2750</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticEar</defName>
+        <label>cybernetic ear</label>
+        <description>An cybernetic ear.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>2750</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticArm</defName>
+        <label>cybernetic arm</label>
+        <description>An cybernetic arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+        <techLevel>Spacer</techLevel>
+        <costList> 
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>5</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticHand</defName>
+        <label>cybernetic hand</label>
+        <description>An cybernetic hand.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>1800</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticFinger</defName>
+        <label>cybernetic finger</label>
+        <description>An cybernetic finger.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>7</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>250</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticLeg</defName>
+        <label>cybernetic leg</label>
+        <description>An cybernetic leg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>8</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticFoot</defName>
+        <label>cybernetic foot</label>
+        <description>An cybernetic foot.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>1800</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>CyberneticToe</defName>
+        <label>cybernetic toe</label>
+        <description>An cybernetic toe.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>7</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>250</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>TargetingEye</defName>
+        <label>targeting eye</label>
+        <description>An targeting eye. With its biogel nerve-link, internal signal pre-processor, and wide-spectrum sensors, it is better than a biological eye in almost every way. A lattice-dust healing system allows it to recover from damage.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>3000</MarketValue>
+            <WorkToMake>38000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>HeavyArm</defName>
+        <label>heavy arm</label>
+        <description>An heavy arm. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+        <techLevel>Spacer</techLevel>
+        <costList> 
+            <Plasteel>17</Plasteel>
+            <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>6500</MarketValue>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>5</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>HammerHand</defName>
+        <label>hammer hand</label>
+        <description>An hammer hand. Silenced mini-servos give great strength, while the biogel nerve-link gives exquisite control. A lattice-dust healing system allows it to recover from damage. It is better than a biological arm in almost every way.</description>
+        <techLevel>Spacer</techLevel>
+        <costList> 
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>2300</MarketValue>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>5</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>ShockHand</defName>
+        <label>shock hand</label>
+        <description>An shock hand.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Meat_Human>20</Meat_Human>
+            <Plasteel>5</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <WorkToMake>3000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>Cyberleg</defName>
+        <label>cyberleg</label>
+        <description>An cyberleg. With its biogel nerve-link, powerful mini-servos, and lattice-dust healing system, it is better than a biological leg in almost every way.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>20</Plasteel>
+            <ComponentSpacer>6</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>8</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>SkateFoot</defName>
+        <label>skate foot</label>
+        <description>An skate foot.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>10</Plasteel>
+            <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <statBases>
+            <MarketValue>900</MarketValue>
+            <WorkToMake>5000</WorkToMake>
+            <Mass>0.3</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+</Defs>

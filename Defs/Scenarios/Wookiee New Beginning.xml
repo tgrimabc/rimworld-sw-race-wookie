@@ -68,18 +68,14 @@
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>MeleeWeapon_Spear</thingDef>
-					<stuff>WoodLog</stuff>
+					<thingDef>TGRightKnucklesKatarn</thingDef>
 					<count>3</count>
+					<stuff>Cloth</stuff>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>Bow_Short</thingDef>
+					<thingDef>TGBowcaster</thingDef>
 					<count>2</count>
-				</li>
-				<li Class="ScenPart_StartingThing_Defined">
-					<def>StartingThing_Defined</def>
-					<thingDef>Pila</thingDef>
 				</li>
 				<li Class="ScenPart_StartingAnimal">
 					<def>StartingAnimal</def>

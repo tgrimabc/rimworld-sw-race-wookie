@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--===================== Claws =====================-->
+  
+    <BodyPartDef Name="Claw_FingerNailBase" Abstract="True">
+        <hitPoints>7</hitPoints>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <skinCovered>false</skinCovered>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <frostbiteVulnerability>10</frostbiteVulnerability>
+        <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="Claw_FingerNailBase">
+        <defName>FingerNail</defName>
+        <label>finger nail</label>
+        <tags>
+            <li>MovingLimbDigit</li>
+            <li>ManipulationLimbDigit</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="Claw_FingerNailBase">
+        <defName>Claw</defName>
+        <label>claw</label>
+        <tags>
+            <li>MovingLimbDigit</li>
+            <li>ManipulationLimbDigit</li>
+        </tags>
+        <spawnThingOnRemoved>Claw</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Skull</defName>
+        <label>skull</label>
+        <hitPoints>25</hitPoints>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+        <skinCovered>false</skinCovered>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <canSuggestAmputation>false</canSuggestAmputation>
+        <destroyableByDamage>false</destroyableByDamage>
+        <spawnThingOnRemoved>Skull</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Eye</defName>
+        <label>eye</label>
+        <hitPoints>10</hitPoints>
+        <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+        <delicate>true</delicate>
+        <skinCovered>false</skinCovered>
+        <socketed>true</socketed>
+        <beautyRelated>true</beautyRelated>
+        <tags>
+            <li>SightSource</li>
+        </tags>
+        <hitChanceFactors>
+            <li>
+                <key>Blunt</key>
+                <value>0</value>
+            </li>
+        </hitChanceFactors>
+        <spawnThingOnRemoved>Eye</spawnThingOnRemoved>
+    </BodyPartDef>
+    
+    <BodyPartDef>
+        <defName>BlindEye</defName>
+        <label>blind eye</label>
+        <hitPoints>10</hitPoints>
+        <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+        <delicate>true</delicate>
+        <skinCovered>false</skinCovered>
+        <socketed>true</socketed>
+        <beautyRelated>true</beautyRelated>
+        <tags>
+            <li>SightSource</li>
+        </tags>
+        <hitChanceFactors>
+            <li>
+                <key>Blunt</key>
+                <value>0</value>
+            </li>
+        </hitChanceFactors>
+        <spawnThingOnRemoved>BlindEye</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Ear</defName>
+        <label>ear</label>
+        <hitPoints>12</hitPoints>
+        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>true</beautyRelated>
+        <tags>
+            <li>HearingSource</li>
+        </tags>
+        <spawnThingOnRemoved>Ear</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Nose</defName>
+        <label>nose</label>
+        <hitPoints>10</hitPoints>
+        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>true</beautyRelated>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <spawnThingOnRemoved>Nose</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Arm</defName>
+        <label>arm</label>
+        <hitPoints>30</hitPoints>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>ManipulationLimbCore</li>
+        </tags>
+        <spawnThingOnRemoved>Arm</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Hand</defName>
+        <label>hand</label>
+        <hitPoints>20</hitPoints>
+        <frostbiteVulnerability>0.5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+        <spawnThingOnRemoved>Hand</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Finger</defName>
+        <label>finger</label>
+        <hitPoints>8</hitPoints>
+        <frostbiteVulnerability>8</frostbiteVulnerability>
+        <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>ManipulationLimbDigit</li>
+        </tags>
+        <spawnThingOnRemoved>Finger</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Leg</defName>
+        <label>leg</label>
+        <hitPoints>30</hitPoints>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+        <spawnThingOnRemoved>Leg</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Foot</defName>
+        <label>foot</label>
+        <hitPoints>25</hitPoints>
+        <frostbiteVulnerability>0.5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>MovingLimbSegment</li>
+        </tags>
+        <spawnThingOnRemoved>Foot</spawnThingOnRemoved>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>Toe</defName>
+        <label>toe</label>
+        <hitPoints>8</hitPoints>
+        <frostbiteVulnerability>10</frostbiteVulnerability>
+        <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+        <skinCovered>true</skinCovered>
+        <tags>
+            <li>MovingLimbDigit</li>
+        </tags>
+        <spawnThingOnRemoved>Toe</spawnThingOnRemoved>
+    </BodyPartDef>
+
+</Defs>

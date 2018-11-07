@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="PlantBase">
+		<defName>Plant_WasakaBerry</defName>
+		<label>wasakaberry bush</label>
+		<description>A bushy wild plant which yields delicious berries. Berries can be cooked, but they're also good to eat even when raw.</description>
+		<statBases>
+			<MaxHitPoints>120</MaxHitPoints>
+            <Nutrition>0.35</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plant/WasakaBerryBush</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<selectable>true</selectable>
+        <neverMultiSelect>false</neverMultiSelect>
+	    <pathCost>30</pathCost>
+        <plant>
+            <harvestedThingDef>RawWasakaBerries</harvestedThingDef>
+            <harvestYield>8</harvestYield>
+            <sowMinSkill>7</sowMinSkill>
+            <growDays>12</growDays>
+            <sowWork>400</sowWork>
+            <harvestWork>500</harvestWork>
+	        <lifespanDaysPerGrowDays>50</lifespanDaysPerGrowDays>
+	        <dieIfLeafless>true</dieIfLeafless>
+	        <harvestTag>Standard</harvestTag>
+	        <sowTags>
+		        <li>Ground</li>
+		        <li>Hydroponic</li>
+	        </sowTags>
+            <fertilitySensitivity>1.25</fertilitySensitivity>
+	        <harvestAfterGrowth>0.33</harvestAfterGrowth>
+            <immatureGraphicPath>Things/Plant/BerryBushImmature</immatureGraphicPath>
+	        <visualSizeRange>
+                <min>0.3</min>
+                <max>1.05</max>
+	        </visualSizeRange>
+	        <topWindExposure>0.3</topWindExposure>
+            <wildOrder>2</wildOrder>
+	        <purpose>Health</purpose>
+        </plant>
+    </ThingDef>
+    
+</Defs>    

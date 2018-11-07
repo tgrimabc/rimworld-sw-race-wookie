@@ -8,6 +8,8 @@
     <isFighter>false</isFighter>
     <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
     <forceNormalGearQuality>true</forceNormalGearQuality>
+  	<minGenerationAge>12</minGenerationAge>
+	  <maxGenerationAge>351</maxGenerationAge>
   </PawnKindDef>
 
   <PawnKindDef ParentName="BaseWookieePawnKind">
@@ -22,7 +24,7 @@
     </apparelTags>
     <apparelMoney>
       <min>200</min>
-      <max>400</max>
+      <max>600</max>
     </apparelMoney>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <techHediffsMoney>

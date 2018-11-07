@@ -3,16 +3,7 @@
 
   <!-- ==================== Thermal Detonator ========================== -->
 
-	<ThingDef ParentName="BaseMakeableGrenade">
-		<defName>TGSilverThermalDetonator</defName>
-		<label>silver thermal detonator</label>
-		<description>silver thermal detonator</description>
-        <tickerType>Normal</tickerType>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponRanged/TGSilverThermalDetonator</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-		</graphicData>
+	<ThingDef ParentName="BaseMakeableGrenade" Name="ThermalDetonator" Abstract="True">
 		<soundInteract>Interact_Grenade</soundInteract>
 		<techLevel>Industrial</techLevel>
 		<statBases>
@@ -53,7 +44,6 @@
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<defaultProjectile>TGSilverDetonator</defaultProjectile>
                 <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
                 <onlyManualCast>true</onlyManualCast>
             </li>
@@ -67,14 +57,7 @@
         </comps>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>TGSilverDetonator</defName>
-		<label>silver detonator</label>
-		<thingClass>Projectile_Explosive</thingClass>
-		<graphicData>
-			<texPath>Things/Item/Projectile/TGSilverDetonator</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
+	<ThingDef ParentName="BaseGrenadeProjectile" Name="Detonator" Abstract="True">
 		<projectile>
 			<explosionRadius >6</explosionRadius >
 			<damageDef>Bomb</damageDef>
@@ -82,8 +65,35 @@
 			<explosionDelay>100</explosionDelay>
 		</projectile>
 	</ThingDef>
+  
+    <ThingDef ParentName="ThermalDetonator">
+		<defName>TGSilverThermalDetonator</defName>
+		<label>silver thermal detonator</label>
+		<description>silver thermal detonator</description>
+        <tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/TGSilverThermalDetonator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<verbs>
+			<li>
+				<defaultProjectile>TGSilverDetonator</defaultProjectile>
+            </li>
+		</verbs>
+    </ThingDef>
 
-	<ThingDef ParentName="BaseMakeableGrenade">
+	<ThingDef ParentName="Detonator">
+		<defName>TGSilverDetonator</defName>
+		<label>silver detonator</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Projectile/TGSilverDetonator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+    </ThingDef>
+
+	<ThingDef ParentName="ThermalDetonator">
 		<defName>TGBrownThermalDetonator</defName>
 		<label>brown thermal detonator</label>
 		<description>brown thermal detonator</description>
@@ -93,62 +103,14 @@
 			<graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<soundInteract>Interact_Grenade</soundInteract>
-		<techLevel>Industrial</techLevel>
-		<statBases>
-			<MaxHitPoints>50</MaxHitPoints>
-            <MarketValue>2000</MarketValue>
-			<Mass>1</Mass>
-			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
-            <WorkToMake>12000</WorkToMake>
-        </statBases>
-        <costList>
-            <Steel>20</Steel>
-            <Chemfuel>30</Chemfuel>
-        </costList>
-		<weaponTags>
-			<li>GrenadeDestructive</li>
-            <li>ThermalDetonator</li>
-		</weaponTags>
-        <tradeTags>
-            <li>ExoticMisc</li>
-        </tradeTags>
-        <thingSetMakerTags>
-            <li>SingleUseWeapon</li>
-        </thingSetMakerTags>
-		<thingCategories>
-			<li>Grenades</li>
-		</thingCategories>
 		<verbs>
 			<li>
-				<label>Verb_ShootOneUse</label>
-				<verbClass>Verb_ShootOneUse</verbClass>
-				<hasStandardCommand>true</hasStandardCommand>
-				<range>20</range>
-				<forcedMissRadius>1</forcedMissRadius>
-				<warmupTime>3</warmupTime>
-				<noiseRadius>4</noiseRadius>
-				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-				<stopBurstWithoutLos>false</stopBurstWithoutLos>
-                <soundCast>ThrowGrenade</soundCast>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
 				<defaultProjectile>TGBrownDetonator</defaultProjectile>
-                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
-                <onlyManualCast>true</onlyManualCast>
 			</li>
 		</verbs>
-        <comps>
-            <li Class="CompProperties_Explosive">
-                <explosiveRadius>6</explosiveRadius>
-                <explosiveDamageType>Bomb</explosiveDamageType>
-                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-            </li>
-        </comps>
 	</ThingDef>
 
-	<ThingDef ParentName="BaseGrenadeProjectile">
+	<ThingDef ParentName="Detonator">
 		<defName>TGBrownDetonator</defName>
 		<label>brown detonator</label>
 		<thingClass>Projectile_Explosive</thingClass>
@@ -156,12 +118,6 @@
 			<texPath>Things/Item/Projectile/TGBrownDetonator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<projectile>
-			<explosionRadius >6</explosionRadius >
-			<damageDef>Bomb</damageDef>
-            <!-- Use default damage from explosion def -->
-			<explosionDelay>100</explosionDelay>
-		</projectile>
 	</ThingDef>
 
 </Defs>

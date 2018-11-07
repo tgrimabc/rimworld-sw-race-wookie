@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs> 
-  
-    <ThingDef ParentName="BaseMeleeWeapon">
-        <defName>TGLeftKnucklesKatarn</defName>
-		<label>left knuckles katarn</label>
-		<description>left knuckles katarn</description>
-		<graphicData>
-			<texPath>Things/Item/Equipment/WeaponMelee/TGLeftKnucklesKatarn</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-		</graphicData>
+    <ThingDef ParentName="BaseMeleeWeapon" Name="KnucklesKatarn" Abstract="True">
         <techLevel>Neolithic</techLevel>
         <costStuffCount>5</costStuffCount>
         <stuffCategories>
@@ -40,6 +31,7 @@
             <li>TGKnucklesKatarn</li>
             <li>NeolithicMeleeDecent</li>
             <li>MedievalShieldValidSidearm</li>
+            <li>Knife</li>
         </weaponTags>
         <tools>
             <li>
@@ -77,9 +69,9 @@
                 <minQualityForArtistic>Excellent</minQualityForArtistic>
             </li>
         </comps>
-	</ThingDef>
-  
-    <ThingDef ParentName="BaseMeleeWeapon">
+	</ThingDef> 
+
+    <ThingDef ParentName="KnucklesKatarn">
         <defName>TGRightKnucklesKatarn</defName>
 		<label>right knuckles katarn</label>
 		<description>right knuckles katarn</description>
@@ -88,50 +80,83 @@
 			<graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
 		</graphicData>
-        <techLevel>Neolithic</techLevel>
+	</ThingDef> 
+
+    <ThingDef ParentName="KnucklesKatarn">
+        <defName>TGLeftKnucklesKatarn</defName>
+		<label>left knuckles katarn</label>
+		<description>left knuckles katarn</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/TGLeftKnucklesKatarn</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+	</ThingDef> 
+  
+    <ThingDef ParentName="BaseMeleeWeapon">
+        <defName>TGGaffiStick</defName>
+		<label>gaffi stick</label>
+		<description>gaffi stick</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/TGGaffiStick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+        <techLevel>Medieval</techLevel>
         <costStuffCount>5</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
             <li>Leathery</li>
         </stuffCategories>
         <costList>
-            <WoodLog>10</WoodLog>
+            <WoodLog>5</WoodLog>
+            <Steel>15</Steel>
         </costList>
 		<statBases>
-            <MarketValue>150</MarketValue>
-			<WorkToMake>5000</WorkToMake>
-			<Mass>0.5</Mass>
+            <MarketValue>60</MarketValue>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>5</Mass>
 			<MaxHitPoints>200</MaxHitPoints>
 		</statBases>
 		<equippedStatOffsets>
-			<MeleeDodgeChance>0.25</MeleeDodgeChance>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<HuntingStealth>0.1</HuntingStealth>
+			<PlantWorkSpeed>0.05</PlantWorkSpeed>
 		</equippedStatOffsets>
+		<equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
             <recipeUsers>
                 <li>CraftingSpot</li>
             </recipeUsers>
-            <skillRequirements>
-                <Crafting>3</Crafting>
-            </skillRequirements>
         </recipeMaker>
         <weaponTags>
-            <li>TGKnucklesKatarn</li>
-            <li>NeolithicMeleeDecent</li>
+            <li>TGTGGaffiStick</li>
+            <li>MedievalMeleeAdvanced</li>
             <li>MedievalShieldValidSidearm</li>
         </weaponTags>
         <tools>
             <li>
                 <label>handle</label>
                 <capacities>
-                    <li>Poke</li>
+                    <li>Blunt</li>
                 </capacities>
-                <power>9</power>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>20</power>
+                <armorPenetration>0.50</armorPenetration>
                 <cooldownTime>2</cooldownTime>
             </li>
             <li>
                 <label>head</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
                 <capacities>
-                    <li>Stab</li>
+                    <li>Blunt</li>
                 </capacities>
                 <power>15</power>
                 <cooldownTime>2</cooldownTime>

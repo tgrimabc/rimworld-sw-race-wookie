@@ -100,10 +100,11 @@
     </apparelMoney>
     <weaponMoney>
 			<min>80</min>
-			<max>80</max>
+			<max>1500</max>
 		</weaponMoney>
 		<weaponTags>
 			<li>NeolithicRangedBasic</li>
+      <li>TGBowcaster</li>
 		</weaponTags>
     <techHediffsMoney>
       <min>50</min>
@@ -136,10 +137,11 @@
     </apparelRequired>
     <weaponMoney>
       <min>150</min>
-      <max>150</max>
+      <max>1500</max>
     </weaponMoney>
     <weaponTags>
       <li>NeolithicMeleeDecent</li>
+      <li>TGBowcaster</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -160,10 +162,11 @@
     </apparelRequired>
     <weaponMoney>
       <min>100</min>
-      <max>100</max>
+      <max>1500</max>
     </weaponMoney>
     <weaponTags>
       <li>NeolithicRangedDecent</li>
+      <li>TGBowcaster</li>
     </weaponTags>
   </PawnKindDef>
   
@@ -212,10 +215,11 @@
     </apparelRequired>
     <weaponMoney>
       <min>250</min>
-      <max>250</max>
+      <max>1500</max>
     </weaponMoney>
     <weaponTags>
       <li>NeolithicRangedHeavy</li>
+      <li>TGBowcaster</li>
     </weaponTags>
   </PawnKindDef>
 
@@ -236,7 +240,7 @@
     </apparelRequired>
     <weaponMoney>
       <min>500</min>
-      <max>1000</max>
+      <max>1500</max>
     </weaponMoney>
   </PawnKindDef>
   
@@ -254,6 +258,7 @@
 		<label>archer chief</label>
 		<weaponTags>
 			<li>NeolithicRangedChief</li>
+      <li>TGBowcaster</li>
 		</weaponTags>
 	</PawnKindDef>
 
