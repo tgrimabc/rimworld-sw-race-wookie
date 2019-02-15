@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ModMetaData>
 	<name>Wookiee</name>
-	<author>Tgrimm92</author>
-	<targetVersion>0.19.2009</targetVersion>
-		<url>https://github.com/tgrimabc</url>
+	<author>TGrimm92</author>
+  	<supportedVersions>
+    	<li>1.0</li>
+  	</supportedVersions>
+	<url>https://github.com/tgrimabc</url>
 	<description>Wookiees are species of intelligent bipeds from the planetKashyyyk. Wookiees are taller, stronger, and hairy than humans and most (if not all) other humanoid species.
 	
 	ComfyTemperature (-30,30)
